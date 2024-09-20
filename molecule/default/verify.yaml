@@ -8,3 +8,11 @@
     - name: example assertion
       assert:
         that: true
+
+- name: "service started"
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: 
+      assert:
+        that: true
