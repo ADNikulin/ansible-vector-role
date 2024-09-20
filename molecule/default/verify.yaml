@@ -8,7 +8,7 @@
     - name: example assertion
       assert:
         that: true
-    - name: Verify Apache is serving web traffic
-      uri:
-        url: http://localhost/
-        status_code: 200
+    - name: Check NGINX configs
+      shell: vector validate --no-environment --config-yaml /etc/vector/vector.yml
+    - name: Check NGINX status
+      shell: ps aux | grep [v]ector
