@@ -16,7 +16,5 @@ platforms:
   - name: ubuntu
     image: ubuntu:latest
     pre_build_image: true
-provisioner:
-  name: user
 verifier:
   name: user
