@@ -3,6 +3,6 @@
   hosts: all
   gather_facts: false
   tasks:
-    - name: "Include roles_vector"
+    - name: "Include vector"
       include_role:
-        name: "roles_vector"
+        name: "vector"
